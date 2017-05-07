@@ -1,0 +1,1819 @@
+prfNoteq6--0,1 : zerof {5} ≢ sucf (zerof {4})
+prfNoteq6--0,1 = λ P → noteq
+  (toℕ (zerof {5}))
+  (toℕ (sucf (zerof {4})))
+  (s≤s z≤n)
+  (eq_cong toℕ P)
+
+prfNoteq6--0,2 : zerof {5} ≢ sucf (sucf (zerof {3}))
+prfNoteq6--0,2 = λ P → noteq
+  (toℕ (zerof {5}))
+  (toℕ (sucf (sucf (zerof {3}))))
+  (s≤s z≤n)
+  (eq_cong toℕ P)
+
+prfNoteq6--0,3 : zerof {5} ≢ sucf (sucf (sucf (zerof {2})))
+prfNoteq6--0,3 = λ P → noteq
+  (toℕ (zerof {5}))
+  (toℕ (sucf (sucf (sucf (zerof {2})))))
+  (s≤s z≤n)
+  (eq_cong toℕ P)
+
+prfNoteq6--0,4 : zerof {5} ≢ sucf (sucf (sucf (sucf (zerof {1}))))
+prfNoteq6--0,4 = λ P → noteq
+  (toℕ (zerof {5}))
+  (toℕ (sucf (sucf (sucf (sucf (zerof {1}))))))
+  (s≤s z≤n)
+  (eq_cong toℕ P)
+
+prfNoteq6--0,5 : zerof {5} ≢ sucf (sucf (sucf (sucf (sucf (zerof {0})))))
+prfNoteq6--0,5 = λ P → noteq
+  (toℕ (zerof {5}))
+  (toℕ (sucf (sucf (sucf (sucf (sucf (zerof {0})))))))
+  (s≤s z≤n)
+  (eq_cong toℕ P)
+
+prfNoteq6--1,2 : sucf (zerof {4}) ≢ sucf (sucf (zerof {3}))
+prfNoteq6--1,2 = λ P → noteq
+  (toℕ (sucf (zerof {4})))
+  (toℕ (sucf (sucf (zerof {3}))))
+  (s≤s (s≤s z≤n))
+  (eq_cong toℕ P)
+
+prfNoteq6--1,3 : sucf (zerof {4}) ≢ sucf (sucf (sucf (zerof {2})))
+prfNoteq6--1,3 = λ P → noteq
+  (toℕ (sucf (zerof {4})))
+  (toℕ (sucf (sucf (sucf (zerof {2})))))
+  (s≤s (s≤s z≤n))
+  (eq_cong toℕ P)
+
+prfNoteq6--1,4 : sucf (zerof {4}) ≢ sucf (sucf (sucf (sucf (zerof {1}))))
+prfNoteq6--1,4 = λ P → noteq
+  (toℕ (sucf (zerof {4})))
+  (toℕ (sucf (sucf (sucf (sucf (zerof {1}))))))
+  (s≤s (s≤s z≤n))
+  (eq_cong toℕ P)
+
+prfNoteq6--1,5 : sucf (zerof {4}) ≢ sucf (sucf (sucf (sucf (sucf (zerof {0})))))
+prfNoteq6--1,5 = λ P → noteq
+  (toℕ (sucf (zerof {4})))
+  (toℕ (sucf (sucf (sucf (sucf (sucf (zerof {0})))))))
+  (s≤s (s≤s z≤n))
+  (eq_cong toℕ P)
+
+prfNoteq6--2,3 : sucf (sucf (zerof {3})) ≢ sucf (sucf (sucf (zerof {2})))
+prfNoteq6--2,3 = λ P → noteq
+  (toℕ (sucf (sucf (zerof {3}))))
+  (toℕ (sucf (sucf (sucf (zerof {2})))))
+  (s≤s (s≤s (s≤s z≤n)))
+  (eq_cong toℕ P)
+
+prfNoteq6--2,4 : sucf (sucf (zerof {3})) ≢ sucf (sucf (sucf (sucf (zerof {1}))))
+prfNoteq6--2,4 = λ P → noteq
+  (toℕ (sucf (sucf (zerof {3}))))
+  (toℕ (sucf (sucf (sucf (sucf (zerof {1}))))))
+  (s≤s (s≤s (s≤s z≤n)))
+  (eq_cong toℕ P)
+
+prfNoteq6--2,5 : sucf (sucf (zerof {3})) ≢ sucf (sucf (sucf (sucf (sucf (zerof {0})))))
+prfNoteq6--2,5 = λ P → noteq
+  (toℕ (sucf (sucf (zerof {3}))))
+  (toℕ (sucf (sucf (sucf (sucf (sucf (zerof {0})))))))
+  (s≤s (s≤s (s≤s z≤n)))
+  (eq_cong toℕ P)
+
+prfNoteq6--3,4 : sucf (sucf (sucf (zerof {2}))) ≢ sucf (sucf (sucf (sucf (zerof {1}))))
+prfNoteq6--3,4 = λ P → noteq
+  (toℕ (sucf (sucf (sucf (zerof {2})))))
+  (toℕ (sucf (sucf (sucf (sucf (zerof {1}))))))
+  (s≤s (s≤s (s≤s (s≤s z≤n))))
+  (eq_cong toℕ P)
+
+prfNoteq6--3,5 : sucf (sucf (sucf (zerof {2}))) ≢ sucf (sucf (sucf (sucf (sucf (zerof {0})))))
+prfNoteq6--3,5 = λ P → noteq
+  (toℕ (sucf (sucf (sucf (zerof {2})))))
+  (toℕ (sucf (sucf (sucf (sucf (sucf (zerof {0})))))))
+  (s≤s (s≤s (s≤s (s≤s z≤n))))
+  (eq_cong toℕ P)
+
+prfNoteq6--4,5 : sucf (sucf (sucf (sucf (zerof {1})))) ≢ sucf (sucf (sucf (sucf (sucf (zerof {0})))))
+prfNoteq6--4,5 = λ P → noteq
+  (toℕ (sucf (sucf (sucf (sucf (zerof {1}))))))
+  (toℕ (sucf (sucf (sucf (sucf (sucf (zerof {0})))))))
+  (s≤s (s≤s (s≤s (s≤s (s≤s z≤n)))))
+  (eq_cong toℕ P)
+
+p_0,1,2,3,4,5 = zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_1,0,2,3,4,5 = (sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_1,0,3,2,4,5 = (sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_1,2,0,3,4,5 = (sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_1,2,3,0,4,5 = (sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_1,3,0,2,4,5 = (sucf (zerof {4})) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_2,0,1,3,4,5 = (sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_2,0,3,1,4,5 = (sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_2,3,0,1,4,5 = (sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,0,1,2,4,5 = (sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,0,2,1,4,5 = (sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,1,0,2,4,5 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,1,2,0,4,5 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,2,0,1,4,5 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_3,2,1,0,4,5 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — ((sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (sucf (sucf (zerof {1}))))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — «»)))))
+
+p_0,1,2,3,5,4 = zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_1,0,2,3,5,4 = (sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_1,0,3,2,5,4 = (sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_1,2,0,3,5,4 = (sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_1,2,3,0,5,4 = (sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_1,3,0,2,5,4 = (sucf (zerof {4})) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_2,0,1,3,5,4 = (sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_2,0,3,1,5,4 = (sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_2,3,0,1,5,4 = (sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,0,1,2,5,4 = (sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,0,2,1,5,4 = (sucf (sucf (sucf (zerof {2})))) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,1,0,2,5,4 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (zerof {3}))) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,1,2,0,5,4 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (zerof {4})) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,2,0,1,5,4 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — (zerof {5} — ((sucf (zerof {4})) — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+p_3,2,1,0,5,4 = (sucf (sucf (sucf (zerof {2})))) — ((sucf (sucf (zerof {3}))) — ((sucf (zerof {4})) — (zerof {5} — ((sucf (sucf (sucf (sucf (sucf (zerof {0})))))) — ((sucf (sucf (sucf (sucf (zerof {1}))))) — «»)))))
+
+lis = p_0,1,2,3,4,5 ∷ p_1,0,2,3,4,5 ∷ p_1,0,3,2,4,5 ∷ p_1,2,0,3,4,5 ∷ p_1,2,3,0,4,5 ∷ p_1,3,0,2,4,5 ∷ p_2,0,1,3,4,5 ∷ p_2,0,3,1,4,5 ∷ p_2,3,0,1,4,5 ∷ p_3,0,1,2,4,5 ∷ p_3,0,2,1,4,5 ∷ p_3,1,0,2,4,5 ∷ p_3,1,2,0,4,5 ∷ p_3,2,0,1,4,5 ∷ p_3,2,1,0,4,5 ∷ p_0,1,2,3,5,4 ∷ p_1,0,2,3,5,4 ∷ p_1,0,3,2,5,4 ∷ p_1,2,0,3,5,4 ∷ p_1,2,3,0,5,4 ∷ p_1,3,0,2,5,4 ∷ p_2,0,1,3,5,4 ∷ p_2,0,3,1,5,4 ∷ p_2,3,0,1,5,4 ∷ p_3,0,1,2,5,4 ∷ p_3,0,2,1,5,4 ∷ p_3,1,0,2,5,4 ∷ p_3,1,2,0,5,4 ∷ p_3,2,0,1,5,4 ∷ p_3,2,1,0,5,4 ∷ []
+
+u_0,1,2,3,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_0,1,2,3,4,5 i ≢ nth p_0,1,2,3,4,5 j 
+u_0,1,2,3,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_0,1,2,3,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_0,1,2,3,4,5 (zerof) (sucf (zerof)) p = prfNoteq6--0,1 
+u_0,1,2,3,4,5 (sucf (zerof)) (zerof) p = ncom prfNoteq6--0,1 
+
+u_0,1,2,3,4,5 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--0,2 
+
+u_0,1,2,3,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--0,3 
+
+u_0,1,2,3,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--0,4 
+
+u_0,1,2,3,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--0,5 
+
+u_0,1,2,3,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_0,1,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+
+u_0,1,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_0,1,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_0,1,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_0,1,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_0,1,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_1,0,2,3,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_1,0,2,3,4,5 i ≢ nth p_1,0,2,3,4,5 j 
+u_1,0,2,3,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,0,2,3,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,0,2,3,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+u_1,0,2,3,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,1 
+
+u_1,0,2,3,4,5 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,0,2,3,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,0,2,3,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,0,2,3,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,0,2,3,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_1,0,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_1,0,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_1,0,2,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_1,0,2,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_1,0,2,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_1,0,2,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_1,0,3,2,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_1,0,3,2,4,5 i ≢ nth p_1,0,3,2,4,5 j 
+u_1,0,3,2,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,0,3,2,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,0,3,2,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+u_1,0,3,2,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,1 
+
+u_1,0,3,2,4,5 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,0,3,2,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,0,3,2,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,0,3,2,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,0,3,2,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_1,0,3,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_1,0,3,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_1,0,3,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_1,0,3,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_1,0,3,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_1,0,3,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_1,2,0,3,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_1,2,0,3,4,5 i ≢ nth p_1,2,0,3,4,5 j 
+u_1,2,0,3,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,2,0,3,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,2,0,3,4,5 (zerof) (sucf (zerof)) p = prfNoteq6--1,2 
+u_1,2,0,3,4,5 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,2,0,3,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,1 
+
+u_1,2,0,3,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,2,0,3,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,2,0,3,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,2,0,3,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_1,2,0,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+
+u_1,2,0,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_1,2,0,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_1,2,0,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_1,2,0,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_1,2,0,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_1,2,3,0,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_1,2,3,0,4,5 i ≢ nth p_1,2,3,0,4,5 j 
+u_1,2,3,0,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,2,3,0,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,2,3,0,4,5 (zerof) (sucf (zerof)) p = prfNoteq6--1,2 
+u_1,2,3,0,4,5 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,2,3,0,4,5 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,2,3,0,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,1 
+
+u_1,2,3,0,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,2,3,0,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,2,3,0,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+
+u_1,2,3,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_1,2,3,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_1,2,3,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_1,2,3,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_1,2,3,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_1,2,3,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_1,3,0,2,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_1,3,0,2,4,5 i ≢ nth p_1,3,0,2,4,5 j 
+u_1,3,0,2,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,3,0,2,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,3,0,2,4,5 (zerof) (sucf (zerof)) p = prfNoteq6--1,3 
+u_1,3,0,2,4,5 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,3,0,2,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,1 
+
+u_1,3,0,2,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,3,0,2,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,3,0,2,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,3,0,2,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,3 
+
+u_1,3,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--2,3 
+
+u_1,3,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--3,4 
+
+u_1,3,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--3,5 
+
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_1,3,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_1,3,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_1,3,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_2,0,1,3,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_2,0,1,3,4,5 i ≢ nth p_2,0,1,3,4,5 j 
+u_2,0,1,3,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,0,1,3,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,0,1,3,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+u_2,0,1,3,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,2 
+
+u_2,0,1,3,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,2 
+
+u_2,0,1,3,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,0,1,3,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,0,1,3,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,0,1,3,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_2,0,1,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_2,0,1,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_2,0,1,3,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_2,0,1,3,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_2,0,1,3,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_2,0,1,3,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_2,0,3,1,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_2,0,3,1,4,5 i ≢ nth p_2,0,3,1,4,5 j 
+u_2,0,3,1,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,0,3,1,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,0,3,1,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+u_2,0,3,1,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,2 
+
+u_2,0,3,1,4,5 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,0,3,1,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,2 
+
+u_2,0,3,1,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,0,3,1,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,0,3,1,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_2,0,3,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_2,0,3,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_2,0,3,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_2,0,3,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_2,0,3,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_2,0,3,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_2,3,0,1,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_2,3,0,1,4,5 i ≢ nth p_2,3,0,1,4,5 j 
+u_2,3,0,1,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,3,0,1,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,3,0,1,4,5 (zerof) (sucf (zerof)) p = prfNoteq6--2,3 
+u_2,3,0,1,4,5 (sucf (zerof)) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,3,0,1,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,2 
+
+u_2,3,0,1,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,2 
+
+u_2,3,0,1,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,3,0,1,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,3,0,1,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,3 
+
+u_2,3,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--1,3 
+
+u_2,3,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--3,4 
+
+u_2,3,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--3,5 
+
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_2,3,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_2,3,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_2,3,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,0,1,2,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,0,1,2,4,5 i ≢ nth p_3,0,1,2,4,5 j 
+u_3,0,1,2,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,0,1,2,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,0,1,2,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+u_3,0,1,2,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,3 
+
+u_3,0,1,2,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,3 
+
+u_3,0,1,2,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--2,3 
+
+u_3,0,1,2,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,0,1,2,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,0,1,2,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_3,0,1,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_3,0,1,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_3,0,1,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_3,0,1,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_3,0,1,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,0,1,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,0,2,1,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,0,2,1,4,5 i ≢ nth p_3,0,2,1,4,5 j 
+u_3,0,2,1,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,0,2,1,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,0,2,1,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+u_3,0,2,1,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--0,3 
+
+u_3,0,2,1,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--2,3 
+
+u_3,0,2,1,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,3 
+
+u_3,0,2,1,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,0,2,1,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,0,2,1,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_3,0,2,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_3,0,2,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_3,0,2,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_3,0,2,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_3,0,2,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,0,2,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,1,0,2,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,1,0,2,4,5 i ≢ nth p_3,1,0,2,4,5 j 
+u_3,1,0,2,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,1,0,2,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,1,0,2,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+u_3,1,0,2,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--1,3 
+
+u_3,1,0,2,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,3 
+
+u_3,1,0,2,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--2,3 
+
+u_3,1,0,2,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,1,0,2,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,1,0,2,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,1 
+
+u_3,1,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_3,1,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_3,1,0,2,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_3,1,0,2,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_3,1,0,2,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,1,0,2,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,1,2,0,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,1,2,0,4,5 i ≢ nth p_3,1,2,0,4,5 j 
+u_3,1,2,0,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,1,2,0,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,1,2,0,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+u_3,1,2,0,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--1,3 
+
+u_3,1,2,0,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--2,3 
+
+u_3,1,2,0,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,3 
+
+u_3,1,2,0,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,1,2,0,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,1,2,0,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_3,1,2,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,1 
+
+u_3,1,2,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_3,1,2,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_3,1,2,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_3,1,2,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,1,2,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,2,0,1,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,2,0,1,4,5 i ≢ nth p_3,2,0,1,4,5 j 
+u_3,2,0,1,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,2,0,1,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,2,0,1,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+u_3,2,0,1,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--2,3 
+
+u_3,2,0,1,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,3 
+
+u_3,2,0,1,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,3 
+
+u_3,2,0,1,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,2,0,1,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,2,0,1,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_3,2,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--1,2 
+
+u_3,2,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_3,2,0,1,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_3,2,0,1,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_3,2,0,1,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,2,0,1,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_3,2,1,0,4,5 : (i j : Fin 6) → (i ≢ j) → nth p_3,2,1,0,4,5 i ≢ nth p_3,2,1,0,4,5 j 
+u_3,2,1,0,4,5 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,2,1,0,4,5 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,2,1,0,4,5 (zerof) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+u_3,2,1,0,4,5 (sucf (zerof)) (zerof) p = prfNoteq6--2,3 
+
+u_3,2,1,0,4,5 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,3 
+
+u_3,2,1,0,4,5 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,3 
+
+u_3,2,1,0,4,5 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,4 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,2,1,0,4,5 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,5 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,2,1,0,4,5 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--1,2 
+
+u_3,2,1,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_3,2,1,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,4 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_3,2,1,0,4,5 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,5 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,4 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_3,2,1,0,4,5 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,5 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,4 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_3,2,1,0,4,5 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,5 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--4,5 
+u_3,2,1,0,4,5 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = ncom prfNoteq6--4,5 
+
+u_0,1,2,3,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_0,1,2,3,5,4 i ≢ nth p_0,1,2,3,5,4 j 
+u_0,1,2,3,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_0,1,2,3,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_0,1,2,3,5,4 (zerof) (sucf (zerof)) p = prfNoteq6--0,1 
+u_0,1,2,3,5,4 (sucf (zerof)) (zerof) p = ncom prfNoteq6--0,1 
+
+u_0,1,2,3,5,4 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--0,2 
+
+u_0,1,2,3,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--0,3 
+
+u_0,1,2,3,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--0,5 
+
+u_0,1,2,3,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--0,4 
+
+u_0,1,2,3,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_0,1,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+
+u_0,1,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_0,1,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_0,1,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_0,1,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_0,1,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_1,0,2,3,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_1,0,2,3,5,4 i ≢ nth p_1,0,2,3,5,4 j 
+u_1,0,2,3,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,0,2,3,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,0,2,3,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+u_1,0,2,3,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,1 
+
+u_1,0,2,3,5,4 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,0,2,3,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,0,2,3,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,0,2,3,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,0,2,3,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_1,0,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_1,0,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_1,0,2,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_1,0,2,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_1,0,2,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_1,0,2,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_1,0,3,2,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_1,0,3,2,5,4 i ≢ nth p_1,0,3,2,5,4 j 
+u_1,0,3,2,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,0,3,2,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,0,3,2,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+u_1,0,3,2,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,1 
+
+u_1,0,3,2,5,4 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,0,3,2,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,0,3,2,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,0,3,2,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,0,3,2,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_1,0,3,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_1,0,3,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_1,0,3,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_1,0,3,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_1,0,3,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_1,0,3,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_1,2,0,3,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_1,2,0,3,5,4 i ≢ nth p_1,2,0,3,5,4 j 
+u_1,2,0,3,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,2,0,3,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,2,0,3,5,4 (zerof) (sucf (zerof)) p = prfNoteq6--1,2 
+u_1,2,0,3,5,4 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,2,0,3,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,1 
+
+u_1,2,0,3,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,2,0,3,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,2,0,3,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,2,0,3,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_1,2,0,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+
+u_1,2,0,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_1,2,0,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_1,2,0,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_1,2,0,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_1,2,0,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_1,2,3,0,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_1,2,3,0,5,4 i ≢ nth p_1,2,3,0,5,4 j 
+u_1,2,3,0,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,2,3,0,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,2,3,0,5,4 (zerof) (sucf (zerof)) p = prfNoteq6--1,2 
+u_1,2,3,0,5,4 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,2,3,0,5,4 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,2,3,0,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,1 
+
+u_1,2,3,0,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,2,3,0,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,2,3,0,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+
+u_1,2,3,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_1,2,3,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_1,2,3,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_1,2,3,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_1,2,3,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_1,2,3,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_1,3,0,2,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_1,3,0,2,5,4 i ≢ nth p_1,3,0,2,5,4 j 
+u_1,3,0,2,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_1,3,0,2,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_1,3,0,2,5,4 (zerof) (sucf (zerof)) p = prfNoteq6--1,3 
+u_1,3,0,2,5,4 (sucf (zerof)) (zerof) p = ncom prfNoteq6--1,3 
+
+u_1,3,0,2,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,1 
+
+u_1,3,0,2,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--1,2 
+
+u_1,3,0,2,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--1,5 
+
+u_1,3,0,2,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--1,4 
+
+u_1,3,0,2,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,3 
+
+u_1,3,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--2,3 
+
+u_1,3,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--3,5 
+
+u_1,3,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--3,4 
+
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_1,3,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_1,3,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_1,3,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_2,0,1,3,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_2,0,1,3,5,4 i ≢ nth p_2,0,1,3,5,4 j 
+u_2,0,1,3,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,0,1,3,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,0,1,3,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+u_2,0,1,3,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,2 
+
+u_2,0,1,3,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,2 
+
+u_2,0,1,3,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--2,3 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,0,1,3,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,0,1,3,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,0,1,3,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_2,0,1,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,3 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_2,0,1,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_2,0,1,3,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,3 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_2,0,1,3,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,5 
+
+u_2,0,1,3,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--3,4 
+
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_2,0,1,3,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_2,0,3,1,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_2,0,3,1,5,4 i ≢ nth p_2,0,3,1,5,4 j 
+u_2,0,3,1,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,0,3,1,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,0,3,1,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+u_2,0,3,1,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,2 
+
+u_2,0,3,1,5,4 (zerof) (sucf (sucf (zerof))) p = prfNoteq6--2,3 
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,0,3,1,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,2 
+
+u_2,0,3,1,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,0,3,1,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,0,3,1,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,3 
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+
+u_2,0,3,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_2,0,3,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_2,0,3,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--1,3 
+
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,5 
+
+u_2,0,3,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--3,4 
+
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_2,0,3,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_2,0,3,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_2,3,0,1,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_2,3,0,1,5,4 i ≢ nth p_2,3,0,1,5,4 j 
+u_2,3,0,1,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_2,3,0,1,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_2,3,0,1,5,4 (zerof) (sucf (zerof)) p = prfNoteq6--2,3 
+u_2,3,0,1,5,4 (sucf (zerof)) (zerof) p = ncom prfNoteq6--2,3 
+
+u_2,3,0,1,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,2 
+
+u_2,3,0,1,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,2 
+
+u_2,3,0,1,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--2,5 
+
+u_2,3,0,1,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--2,4 
+
+u_2,3,0,1,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,3 
+
+u_2,3,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--1,3 
+
+u_2,3,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--3,5 
+
+u_2,3,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--3,4 
+
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_2,3,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_2,3,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_2,3,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,0,1,2,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,0,1,2,5,4 i ≢ nth p_3,0,1,2,5,4 j 
+u_3,0,1,2,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,0,1,2,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,0,1,2,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+u_3,0,1,2,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,3 
+
+u_3,0,1,2,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,3 
+
+u_3,0,1,2,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--2,3 
+
+u_3,0,1,2,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,0,1,2,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,0,1,2,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_3,0,1,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_3,0,1,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_3,0,1,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_3,0,1,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_3,0,1,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,0,1,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,0,2,1,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,0,2,1,5,4 i ≢ nth p_3,0,2,1,5,4 j 
+u_3,0,2,1,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,0,2,1,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,0,2,1,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--0,3 
+u_3,0,2,1,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--0,3 
+
+u_3,0,2,1,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--2,3 
+
+u_3,0,2,1,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,3 
+
+u_3,0,2,1,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,0,2,1,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,0,2,1,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--0,2 
+
+u_3,0,2,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--0,1 
+
+u_3,0,2,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--0,5 
+
+u_3,0,2,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--0,4 
+
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_3,0,2,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_3,0,2,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,0,2,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,1,0,2,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,1,0,2,5,4 i ≢ nth p_3,1,0,2,5,4 j 
+u_3,1,0,2,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,1,0,2,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,1,0,2,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+u_3,1,0,2,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--1,3 
+
+u_3,1,0,2,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,3 
+
+u_3,1,0,2,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,3 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--2,3 
+
+u_3,1,0,2,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,1,0,2,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,1,0,2,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,1 
+
+u_3,1,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--1,2 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_3,1,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_3,1,0,2,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,2 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_3,1,0,2,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,5 
+
+u_3,1,0,2,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--2,4 
+
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,1,0,2,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,1,2,0,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,1,2,0,5,4 i ≢ nth p_3,1,2,0,5,4 j 
+u_3,1,2,0,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,1,2,0,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,1,2,0,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--1,3 
+u_3,1,2,0,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--1,3 
+
+u_3,1,2,0,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,3 
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--2,3 
+
+u_3,1,2,0,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,3 
+
+u_3,1,2,0,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,1,2,0,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,1,2,0,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = prfNoteq6--1,2 
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = ncom prfNoteq6--1,2 
+
+u_3,1,2,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,1 
+
+u_3,1,2,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--1,5 
+
+u_3,1,2,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--1,4 
+
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,2 
+
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,5 
+
+u_3,1,2,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--2,4 
+
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_3,1,2,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,1,2,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,2,0,1,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,2,0,1,5,4 i ≢ nth p_3,2,0,1,5,4 j 
+u_3,2,0,1,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,2,0,1,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,2,0,1,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+u_3,2,0,1,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--2,3 
+
+u_3,2,0,1,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,3 
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--0,3 
+
+u_3,2,0,1,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,3 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--1,3 
+
+u_3,2,0,1,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,2,0,1,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,2,0,1,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,2 
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_3,2,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,2 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--1,2 
+
+u_3,2,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_3,2,0,1,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = prfNoteq6--0,1 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,1 
+
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,5 
+
+u_3,2,0,1,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--0,4 
+
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,5 
+
+u_3,2,0,1,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--1,4 
+
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,2,0,1,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+u_3,2,1,0,5,4 : (i j : Fin 6) → (i ≢ j) → nth p_3,2,1,0,5,4 i ≢ nth p_3,2,1,0,5,4 j 
+u_3,2,1,0,5,4 (zerof) (zerof) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (zerof)) (sucf (zerof)) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (zerof))) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (zerof)))) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (zerof))))) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ⊥-elim (p refl)
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (sucf h)))))) _ = ⊥-elim (nolify h) 
+u_3,2,1,0,5,4 _ (sucf (sucf (sucf (sucf (sucf (sucf h)))))) = ⊥-elim (nolify h) 
+
+u_3,2,1,0,5,4 (zerof) (sucf (zerof)) p = ncom prfNoteq6--2,3 
+u_3,2,1,0,5,4 (sucf (zerof)) (zerof) p = prfNoteq6--2,3 
+
+u_3,2,1,0,5,4 (zerof) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,3 
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (zerof) p = prfNoteq6--1,3 
+
+u_3,2,1,0,5,4 (zerof) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,3 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (zerof) p = prfNoteq6--0,3 
+
+u_3,2,1,0,5,4 (zerof) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--3,5 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (zerof) p = ncom prfNoteq6--3,5 
+
+u_3,2,1,0,5,4 (zerof) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--3,4 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (zerof) p = ncom prfNoteq6--3,4 
+
+u_3,2,1,0,5,4 (sucf (zerof)) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,2 
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (sucf (zerof)) p = prfNoteq6--1,2 
+
+u_3,2,1,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,2 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (zerof)) p = prfNoteq6--0,2 
+
+u_3,2,1,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--2,5 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (zerof)) p = ncom prfNoteq6--2,5 
+
+u_3,2,1,0,5,4 (sucf (zerof)) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--2,4 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (zerof)) p = ncom prfNoteq6--2,4 
+
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,1 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (zerof))) p = prfNoteq6--0,1 
+
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--1,5 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,5 
+
+u_3,2,1,0,5,4 (sucf (sucf (zerof))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--1,4 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (zerof))) p = ncom prfNoteq6--1,4 
+
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--0,5 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,5 
+
+u_3,2,1,0,5,4 (sucf (sucf (sucf (zerof)))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = prfNoteq6--0,4 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (zerof)))) p = ncom prfNoteq6--0,4 
+
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (zerof))))) (sucf (sucf (sucf (sucf (sucf (zerof)))))) p = ncom prfNoteq6--4,5 
+u_3,2,1,0,5,4 (sucf (sucf (sucf (sucf (sucf (zerof)))))) (sucf (sucf (sucf (sucf (zerof))))) p = prfNoteq6--4,5 
+
+UNI : Unicalized lis 
+UNI = u_0,1,2,3,4,5 u-cons (u_1,0,2,3,4,5 u-cons (u_1,0,3,2,4,5 u-cons (u_1,2,0,3,4,5 u-cons (u_1,2,3,0,4,5 u-cons (u_1,3,0,2,4,5 u-cons (u_2,0,1,3,4,5 u-cons (u_2,0,3,1,4,5 u-cons (u_2,3,0,1,4,5 u-cons (u_3,0,1,2,4,5 u-cons (u_3,0,2,1,4,5 u-cons (u_3,1,0,2,4,5 u-cons (u_3,1,2,0,4,5 u-cons (u_3,2,0,1,4,5 u-cons (u_3,2,1,0,4,5 u-cons (u_0,1,2,3,5,4 u-cons (u_1,0,2,3,5,4 u-cons (u_1,0,3,2,5,4 u-cons (u_1,2,0,3,5,4 u-cons (u_1,2,3,0,5,4 u-cons (u_1,3,0,2,5,4 u-cons (u_2,0,1,3,5,4 u-cons (u_2,0,3,1,5,4 u-cons (u_2,3,0,1,5,4 u-cons (u_3,0,1,2,5,4 u-cons (u_3,0,2,1,5,4 u-cons (u_3,1,0,2,5,4 u-cons (u_3,1,2,0,5,4 u-cons (u_3,2,0,1,5,4 u-cons (u_3,2,1,0,5,4 u-cons u-nil)))))))))))))))))))))))))))))
