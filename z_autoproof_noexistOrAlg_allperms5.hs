@@ -156,4 +156,4 @@ algOutput dep = case (algFind lis dep "") of
 main = do
 	hSetEncoding stdout utf8
 --	putStr (show (length lis) ++ "\n\n\n\n")
-	putStr (algOutput 10)
+	putStr (algOutput 7)
